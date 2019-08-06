@@ -8,7 +8,7 @@ targets:
     platform: iOS 
     type: application
     sources:
-      - App/iOS
+      - TPLProjectName/iOS
     configFiles:
       Debug: configs/TPLProjectName-iOS-Debug.xcconfig
       Release: configs/TPLProjectName-iOS-Release.xcconfig
@@ -22,7 +22,7 @@ targets:
     platform: macOS
     type: application
     sources:
-      - App/macOS
+      - TPLProjectName/macOS
     configFiles:
       Debug: configs/TPLProjectName-macOS-Debug.xcconfig
       Release: configs/TPLProjectName-macOS-Release.xcconfig
