@@ -1,0 +1,82 @@
+name: TPLProjectName
+options:
+  minimumXcodeGenVersion: 2.2.0
+  createIntermediateGroups: true
+targets:
+  #iOS application
+  TPLProjectName-iOS:
+    platform: iOS 
+    type: application
+    sources:
+      - App/iOS
+    configFiles:
+      Debug: configs/TPLProjectName-iOS-Debug.xcconfig
+      Release: configs/TPLProjectName-iOS-Release.xcconfig
+    dependencies:
+      - carthage: ReSwift
+    scheme:
+      environmentVariables:
+        ENABLE_SIGNPOST: YES
+  #macOS application
+  TPLProjectName-macOS:
+    platform: macOS
+    type: application
+    sources:
+      - App/macOS
+    configFiles:
+      Debug: configs/TPLProjectName-macOS-Debug.xcconfig
+      Release: configs/TPLProjectName-macOS-Release.xcconfig
+    dependencies:
+      - carthage: ReSwift
+    scheme:
+      environmentVariables:
+        ENABLE_SIGNPOST: YES
+  # Framework Targets
+  Shared:
+    platform: macOS
+    type: framework
+    sources:
+      - Shared/
+    configFiles:
+      Debug: configs/Shared-Debug.xcconfig
+      Release: configs/Shared-Release.xcconfig
+  #Test Targets
+  TPLProjectName-macOSTests:
+    platform: macOS
+    type: bundle.unit-test
+    configFiles:
+      Debug: configs/TPLProjectName-macOSTests.xcconfig
+    sources:
+      - Tests/TPLProjectName-macOSTests
+    dependencies:
+      - target: TPLProjectName-macOS
+    scheme:
+      testTargets:
+        - TPLProjectName-macOSTests
+      gatherCoverageData: true
+  TPLProjectName-iOSTests:
+    platform: macOS
+    type: bundle.unit-test
+    configFiles:
+      Debug: configs/TPLProjectName-iOSTests.xcconfig
+    sources:
+      - Tests/TPLProjectName-iOSTests
+    dependencies:
+      - target: TPLProjectName-iOS
+    scheme:
+      testTargets:
+        - TPLProjectName-iOSTests
+      gatherCoverageData: true
+  SharedTests:
+    platform: macOS
+    type: bundle.unit-test
+    configFiles:
+      Debug: configs/SharedTests.xcconfig
+    sources:
+      - Tests/SharedTests
+    dependencies:
+      - target: Shared
+    scheme:
+      testTargets:
+        - SharedTests
+      gatherCoverageData: true

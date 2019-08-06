@@ -1,0 +1,21 @@
+#!/bin/bash
+DIR="$( cd "$( dirname "$0" )" && pwd )"
+APP_NAME="OsxCheckForUpdates"
+APP_SRC="../build/deploy"
+BACKGROUND_IMG=".background/background.png"
+
+# Since create-dmg does not override, be sure to delete previous DMG
+test -f $APP_SRC/$APP_NAME.dmg && rm $APP_SRC/$APP_NAME.dmg
+echo ${BACKGROUND_IMG}
+# Create the DMG
+./dmg-helper/create-dmg \
+--volname "$APP_NAME Installer" \
+--background "$BACKGROUND_IMG" \
+--window-pos 200 120 \
+--window-size 800 400 \
+--icon-size 100 \
+--icon $APP_NAME 200 190 \
+--hide-extension "$APP_NAME.app" \
+--app-drop-link 600 185 \
+"$APP_SRC/$APP_NAME.dmg" \
+"$APP_SRC/"
