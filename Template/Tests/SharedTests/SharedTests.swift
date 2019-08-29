@@ -2,8 +2,8 @@
 //  SharedTests.swift
 //  SharedTests
 //
-//  Created by Hung Truong on 6/17/19.
-//  Copyright © 2019 Hung Truong. All rights reserved.
+//  Created by TPLAuthor on 6/17/19.
+//  Copyright © 2019 TPLOrganizationName. All rights reserved.
 //
 
 import XCTest
