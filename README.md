@@ -20,7 +20,7 @@ Welcome to Swift Template, an useful project structure for creating effectively 
   - Before installing the project, make sure [XCodegen](https://github.com/yonaskolb/XcodeGen) and [Carthage](https://github.com/Carthage/Carthage#installing-carthage) installed. If not yet installed, just run `$ make init-env`
   - To create your project, just run: 
     ```sh
-    $ swift -target x86_64-apple-macosx10.14 install.swift
+    $ make install
     ```
   - After created project, we'll need some the following steps
     - Jump to your project folder
