@@ -8,6 +8,7 @@ var TPLBundleIdentifier = "TPLBundleIdentifier"
 let TPLAuthorWebsite = "TPLAuthorWebsite"
 let TPLUserName = "TPLUserName"
 let TPLOrganizationName = "TPLOrganizationName"
+let TPLCopyright = "Copyright © 2019"
 
 var projectName = "SampleProject"
 var bundleIdentifier = "com.smants.SampleProject"
@@ -15,6 +16,7 @@ var author = "Hung Q. Truong"
 var authorWebsite = "https://htq287.github.io"
 var userName = "hungtq"
 var organizationName = "SMAnts"
+var copyright = "Copyright © 2019"
 
 let fileManager = FileManager.default
 
@@ -55,6 +57,7 @@ extension NSURL {
         newContent = newContent.replacingOccurrences(of: TPLUserName, with: userName)
         newContent = newContent.replacingOccurrences(of: TPLAuthorWebsite, with: authorWebsite)
         newContent = newContent.replacingOccurrences(of: TPLOrganizationName, with: organizationName)
+        newContent = newContent.replacingOccurrences(of: TPLCopyright, with: copyright)
         try! newContent.write(to: self as URL, atomically: true, encoding: String.Encoding.utf8)
     }
 }
@@ -75,10 +78,7 @@ func checkThatProjectForlderCanBeCreated(projectURL: NSURL){
     }
 }
 
-print("Before Run Scripts")
-
 func shell(args: String...) -> (output: String, exitCode: Int32) {
-    print("Get in Shell ...")
     let task = Process()
     task.launchPath = "/usr/bin/env"
     task.arguments = args
@@ -93,23 +93,46 @@ func shell(args: String...) -> (output: String, exitCode: Int32) {
     return (output, task.terminationStatus)
 }
 
-func prompt(message: String, defaultValue: String) -> String {
+func prompt(_ message: String, _ defaultValue: String) -> String {
   print("\n> \(message) (or press Enter to use \(defaultValue))")
   let line = readLine()
   return line == nil || line == "" ? defaultValue : line!
 }
 
-projectName = prompt(message: "Project name", defaultValue: projectName)
+projectName = prompt("Project Name", projectName)
+bundleIdentifier = prompt("Bundle Identifier", bundleIdentifier)
+author = prompt("Author", author)
+organizationName = prompt("Organizer", organizationName)
+copyright = prompt("Copyright", copyright)
 
 // Check if folder already exists
 let newProjectFolderURL = NSURL(fileURLWithPath: projectName, relativeTo: runScriptPathURL as URL)
 newProjectFolderPath = newProjectFolderURL.path!
 checkThatProjectForlderCanBeCreated(projectURL: newProjectFolderURL)
 
-// Copy template folder to a new folder inside run script url called projectName
+// Copy template folder to a new folder
 do {
     try fileManager.copyItem(at: projectTemplateForlderURL as URL, to: newProjectFolderURL as URL)
 } catch let error as NSError {
     printErrorLogsAndExit(logs: error.localizedDescription)
+}
+
+// rename files/Folders and update content
+let enumerator = fileManager.enumerator(at: newProjectFolderURL as URL, includingPropertiesForKeys: [.nameKey, .isDirectoryKey], options: [], errorHandler: nil)!
+var directories = [NSURL]()
+print("\nCreating \(projectName) ...")
+while let fileURL = enumerator.nextObject() as? NSURL {
+    guard !ignoredFiles.contains(fileURL.fileName) else { continue }
+    if fileURL.isDirectory {
+      directories.append(fileURL)
+    }
+    else {
+      fileURL.updateContent()
+      fileURL.renameIfNeeded()
+    }
+}
+
+for fileURL in directories.reversed() {
+  fileURL.renameIfNeeded()
 }
 
