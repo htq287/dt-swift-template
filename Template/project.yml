@@ -12,8 +12,6 @@ targets:
     configFiles:
       Debug: configs/TPLProjectName-iOS-Debug.xcconfig
       Release: configs/TPLProjectName-iOS-Release.xcconfig
-    dependencies:
-      - carthage: ReSwift
     scheme:
       environmentVariables:
         ENABLE_SIGNPOST: YES
@@ -27,7 +25,8 @@ targets:
       Debug: configs/TPLProjectName-macOS-Debug.xcconfig
       Release: configs/TPLProjectName-macOS-Release.xcconfig
     dependencies:
-      - carthage: ReSwift
+      - target: TPLProjectNameCore
+      - target: Shared
     scheme:
       environmentVariables:
         ENABLE_SIGNPOST: YES
@@ -36,10 +35,21 @@ targets:
     platform: macOS
     type: framework
     sources:
-      - Shared/
+      - Shared
     configFiles:
       Debug: configs/Shared-Debug.xcconfig
       Release: configs/Shared-Release.xcconfig
+  TPLProjectNameCore:
+    platform: macOS
+    type: framework
+    sources:
+      - TPLProjectNameCore
+    configFiles:
+      Debug: configs/TPLProjectNameCore-Debug.xcconfig
+      Release: configs/TPLProjectNameCore-Release.xcconfig
+    dependencies:
+      - carthage: Realm
+      - carthage: RealmSwift
   #Test Targets
   TPLProjectName-macOSTests:
     platform: macOS
@@ -79,4 +89,17 @@ targets:
     scheme:
       testTargets:
         - SharedTests
+      gatherCoverageData: true
+  TPLProjectNameCoreTests:
+    platform: macOS
+    type: bundle.unit-test
+    configFiles:
+      Debug: configs/TPLProjectNameCoreTests.xcconfig
+    sources:
+      - Tests/TPLProjectNameCoreTests
+    dependencies:
+      - target: TPLProjectNameCore
+    scheme:
+      testTargets:
+        - TPLProjectNameCoreTests
       gatherCoverageData: true

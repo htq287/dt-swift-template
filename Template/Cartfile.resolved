@@ -1,4 +1,2 @@
-github "Alamofire/Alamofire" "4.8.2"
-github "ReSwift/ReSwift" "5.0.0"
-github "ReactiveX/RxSwift" "5.0.1"
-github "realm/realm-cocoa" "v3.17.3"
+github "Alamofire/Alamofire" "4.9.0"
+github "realm/realm-cocoa" "v3.18.0"
