@@ -1,5 +1,5 @@
-# Generic Template for macOS Application
-Welcome to Generic Swift Template for macOS Application.
+# GRTPLProjectName
+Welcome to GRTPLProjectName
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
 ![Xcode 10.2+](https://img.shields.io/badge/Xcode-10.2%2B-blue.svg)
