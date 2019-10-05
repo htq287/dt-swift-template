@@ -1,0 +1,57 @@
+name: GRTPLProjectName
+options:
+  minimumXcodeGenVersion: 2.2.0
+  createIntermediateGroups: true
+targets:
+  #macOS application
+  GRTPLProjectName:
+    platform: macOS
+    deploymentTarget: "10.14"
+    type: application
+    sources:
+      - GRTPLProjectName
+    dependencies:
+      - target: CoreGRTPLProjectName
+    configFiles:
+      Debug: configs/GRTPLProjectName-Debug.xcconfig
+      Release: configs/GRTPLProjectName-Release.xcconfig
+    scheme:
+      environmentVariables:
+        ENABLE_SIGNPOST: YES
+  # Framework Targets
+  CoreGRTPLProjectName:
+    platform: macOS
+    type: framework
+    deploymentTarget: "10.14"
+    sources:
+      - CoreGRTPLProjectName
+    configFiles:
+      Debug: configs/CoreGRTPLProjectName-Debug.xcconfig
+      Release: configs/CoreGRTPLProjectName-Release.xcconfig
+  #Test Targets
+  GRTPLProjectNameTests:
+    platform: macOS
+    type: bundle.unit-test
+    configFiles:
+      Debug: configs/GRTPLProjectNameTests.xcconfig
+    sources:
+      - Tests/GRTPLProjectNameTests
+    dependencies:
+      - target: GRTPLProjectName
+    scheme:
+      testTargets:
+        - GRTPLProjectNameTests
+      gatherCoverageData: true
+  CoreGRTPLProjectNameTests:
+    platform: macOS
+    type: bundle.unit-test
+    configFiles:
+      Debug: configs/CoreGRTPLProjectNameTests.xcconfig
+    sources:
+      - Tests/CoreGRTPLProjectNameTests
+    dependencies:
+      - target: CoreGRTPLProjectName
+    scheme:
+      testTargets:
+        - CoreGRTPLProjectNameTests
+      gatherCoverageData: true
