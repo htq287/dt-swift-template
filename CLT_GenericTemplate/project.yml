@@ -1,0 +1,18 @@
+name: CLTProjectName
+options:
+  minimumXcodeGenVersion: 2.2.0
+  createIntermediateGroups: true
+targets:
+  #command line tool
+  CLTProjectName:
+    platform: macOS
+    deploymentTarget: "10.14"
+    type: tool
+    sources:
+      - CLTProjectName
+    configFiles:
+      Debug: configs/CLTProjectName-Debug.xcconfig
+      Release: configs/CLTProjectName-Release.xcconfig
+    scheme:
+      environmentVariables:
+        ENABLE_SIGNPOST: YES
