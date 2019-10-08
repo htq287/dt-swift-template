@@ -9,3 +9,7 @@ init-env:
 	brew install xcodegen
 install:
 	swift -target x86_64-apple-macosx10.14 installer.swift
+install-commandlinetool-template:
+	swift -target x86_64-apple-macosx10.14 installer.swift -template CLT_GenericTemplate
+install-macosx-generic-template:
+	swift -target x86_64-apple-macosx10.14 installer.swift -template macOS_GenericTemplate
