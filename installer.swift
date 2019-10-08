@@ -2,7 +2,28 @@
 
 import Foundation
 
-let TPLProjectName = "TPLProjectName"
+var TPLProjectName = ""
+
+let arguments: Array = CommandLine.arguments
+let templateName = arguments[2]
+
+switch templateName {
+case "Template":
+    TPLProjectName = "TPLProjectName"
+    break
+case "CLT_GenericTemplate":
+    TPLProjectName = "CLTProjectName"
+    break
+case "macOS_GenericTemplate":
+    TPLProjectName = "GRTPLProjectName"
+    break
+default:
+    break
+    
+}
+
+
+// let TPLProjectName = "TPLProjectName"
 let TPLAuthor = "TPLAuthor"
 var TPLBundleIdentifier = "TPLBundleIdentifier"
 let TPLAuthorWebsite = "TPLAuthorWebsite"
@@ -22,7 +43,7 @@ let fileManager = FileManager.default
 
 let runScriptPathURL = NSURL(fileURLWithPath: fileManager.currentDirectoryPath, isDirectory: true)
 let currentScriptPathURL = NSURL(fileURLWithPath: NSURL(fileURLWithPath: CommandLine.arguments[0], relativeTo: runScriptPathURL as URL).deletingLastPathComponent!.path, isDirectory: true)
-let projectTemplateForlderURL = NSURL(fileURLWithPath: "Template", relativeTo: currentScriptPathURL as URL)
+let projectTemplateForlderURL = NSURL(fileURLWithPath: templateName, relativeTo: currentScriptPathURL as URL)
 var newProjectFolderPath = ""
 let ignoredFiles = [".DS_Store", "UserInterfaceState.xcuserstate", "Pods", "Carthage", "build"]
 
@@ -40,8 +61,8 @@ extension NSURL {
     }
     
     func renameIfNeeded() {
-        if let _ = fileName.range(of: "TPLProjectName") {
-            let renamedFileName = fileName.replacingOccurrences(of: "TPLProjectName", with: projectName)
+        if let _ = fileName.range(of: TPLProjectName) {
+            let renamedFileName = fileName.replacingOccurrences(of: TPLProjectName, with: projectName)
             try! FileManager.default.moveItem(at: self as URL, to: NSURL(fileURLWithPath: renamedFileName, relativeTo: deletingLastPathComponent) as URL)
         }
     }
