@@ -25,7 +25,6 @@ targets:
       Debug: configs/TPLProjectName-macOS-Debug.xcconfig
       Release: configs/TPLProjectName-macOS-Release.xcconfig
     dependencies:
-      - target: TPLProjectNameCore
       - target: Shared
     scheme:
       environmentVariables:
@@ -39,6 +38,8 @@ targets:
     configFiles:
       Debug: configs/Shared-Debug.xcconfig
       Release: configs/Shared-Release.xcconfig
+    dependencies:
+      - target: TPLProjectNameCore
   TPLProjectNameCore:
     platform: macOS
     type: framework
