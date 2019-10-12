@@ -50,6 +50,7 @@ targets:
     dependencies:
       - carthage: Realm
       - carthage: RealmSwift
+      - carthage: Alamofire
   #Test Targets
   TPLProjectName-macOSTests:
     platform: macOS
