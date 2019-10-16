@@ -8,8 +8,8 @@
 import Foundation
 import RealmSwift
 
-class BaseObject: Object {
-    @objc dynamic var id: String = ""
+open class BaseObject: Object {
+    @objc dynamic public var id: String = ""
     
     override public static func primaryKey() -> String? {
         return "id"

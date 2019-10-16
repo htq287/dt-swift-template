@@ -7,7 +7,10 @@
 
 import Foundation
 
-protocol IDatabase {
+public protocol IDatabase {
     associatedtype T
     
+    func create(_ object: T) -> Void
+    func update(_ object: T) -> Void
+    func delete(_ object: T) -> Void
 }
