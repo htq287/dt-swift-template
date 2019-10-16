@@ -11,18 +11,9 @@ import TPLProjectNameCore
 
 class BaseTestCase: XCTestCase {
     
-    /*
-     NSBundle *testsBundle = [NSBundle bundleForClass:[self class]];
-     XCTAssertNotNil(testsBundle);
-     
-     NSDictionary *infoDict = [testsBundle infoDictionary];
-     XCTAssertNotNil(infoDict);
-     
-     NSString *apiRoot = infoDict[@"API_ROOT"];
-     */
-    
     let timeout: TimeInterval = 5
     var networkingFactory: INetworkingFactory!
+    var db: Database!
     
     var testBundle: Bundle!
 
@@ -32,6 +23,7 @@ class BaseTestCase: XCTestCase {
         XCTAssertNotNil(testBundle)
         
         self.networkingFactory = NetworkingFactory()
+        self.db = Database.init(databasePath: "")
     }
 
     override func tearDown() {
