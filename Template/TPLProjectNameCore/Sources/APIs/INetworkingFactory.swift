@@ -7,6 +7,7 @@
 
 import Foundation
 
-protocol INetworkingFactory {
-    
+public protocol INetworkingFactory {
+    func alamofireManager() -> IHTTPManager
+    func afnetworkingManager() -> IHTTPManager
 }
