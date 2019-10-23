@@ -2,7 +2,7 @@
 //  MocksEntityRepository.swift
 //  TPLProjectNameCoreTests
 //
-//  Created by Hung Truong on 10/16/19.
+//  Created by TPLAuthor on 10/16/19.
 //
 
 import Foundation

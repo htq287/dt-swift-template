@@ -2,7 +2,7 @@
 //  AlamofireHTTPService.swift
 //  Shared
 //
-//  Created by Hung Truong on 10/13/19.
+//  Created by TPLAuthor on 10/13/19.
 //
 
 import Foundation

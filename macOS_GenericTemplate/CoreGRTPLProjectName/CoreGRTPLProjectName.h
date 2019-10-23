@@ -2,7 +2,7 @@
 //  CoreGRTPLProjectName.h
 //  CoreGRTPLProjectName
 //
-//  Created by Hung Truong on 10/5/19.
+//  Created by TPLAuthor on 10/5/19.
 //
 
 #import <Cocoa/Cocoa.h>
