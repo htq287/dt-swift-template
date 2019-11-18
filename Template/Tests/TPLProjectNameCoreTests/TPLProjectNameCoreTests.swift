@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import Shared
+@testable import TPLProjectNameCore
 
 class TPLProjectNameCoreTests: BaseTestCase {
 
