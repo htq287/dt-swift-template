@@ -53,7 +53,7 @@ Welcome to Swift Template, an useful project structure for creating effectively 
 # License
 The MIT License (MIT)
 
-Copyright (C) 2019, Hung Q. Truong. https://htq287.github.io. All rights reserved.
+Copyright (C) 2019, Hung Q. Truong. https://htq287.com. All rights reserved.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
