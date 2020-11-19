@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "18ADD929BB327E6F25F856E16CEA0219"
+               BlueprintIdentifier = "18ADD929BB327E6F25F856E1"
                BuildableName = "CoreGRTPLProjectNameTests.xctest"
                BlueprintName = "CoreGRTPLProjectNameTests"
                ReferencedContainer = "container:GRTPLProjectName.xcodeproj">
@@ -27,13 +27,14 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "NO"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "18ADD929BB327E6F25F856E16CEA0219"
+               BlueprintIdentifier = "18ADD929BB327E6F25F856E1"
                BuildableName = "CoreGRTPLProjectNameTests.xctest"
                BlueprintName = "CoreGRTPLProjectNameTests"
                ReferencedContainer = "container:GRTPLProjectName.xcodeproj">
@@ -43,7 +44,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "18ADD929BB327E6F25F856E16CEA0219"
+            BlueprintIdentifier = "18ADD929BB327E6F25F856E1"
             BuildableName = "CoreGRTPLProjectNameTests.xctest"
             BlueprintName = "CoreGRTPLProjectNameTests"
             ReferencedContainer = "container:GRTPLProjectName.xcodeproj">
@@ -51,8 +52,6 @@
       </MacroExpansion>
       <CommandLineArguments>
       </CommandLineArguments>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -64,20 +63,17 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "18ADD929BB327E6F25F856E16CEA0219"
+            BlueprintIdentifier = "18ADD929BB327E6F25F856E1"
             BuildableName = "CoreGRTPLProjectNameTests.xctest"
             BlueprintName = "CoreGRTPLProjectNameTests"
             ReferencedContainer = "container:GRTPLProjectName.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <CommandLineArguments>
       </CommandLineArguments>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -89,7 +85,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "18ADD929BB327E6F25F856E16CEA0219"
+            BlueprintIdentifier = "18ADD929BB327E6F25F856E1"
             BuildableName = "CoreGRTPLProjectNameTests.xctest"
             BlueprintName = "CoreGRTPLProjectNameTests"
             ReferencedContainer = "container:GRTPLProjectName.xcodeproj">
