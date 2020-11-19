@@ -1,3 +1,3 @@
 #include "Base.xcconfig"
 
-PRODUCT_BUNDLE_IDENTIFIER = com.rilthot.CLTProjectName
+PRODUCT_BUNDLE_IDENTIFIER = com.swift-template.CLTProjectName

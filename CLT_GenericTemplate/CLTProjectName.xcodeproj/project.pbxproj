@@ -7,55 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C1ED1EF79F054F2A2DFE3F5D5083DC2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54026FA999249B8463898AE894014144 /* main.swift */; };
+		70D8F305606A983A560AC7BD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54026FA999249B8463898AE8 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		54026FA999249B8463898AE894014144 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		BF533BA17175D62B8FCEFC84913EEF8D /* CLTProjectName-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "CLTProjectName-Release.xcconfig"; sourceTree = "<group>"; };
-		D00045AC2B8F09BAC95BF5FB407395CB /* CLTProjectName-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "CLTProjectName-Debug.xcconfig"; sourceTree = "<group>"; };
-		D94FC4B3F9CFA50B4A3F0F85424C409E /* CLTProjectName */ = {isa = PBXFileReference; includeInIndex = 0; path = CLTProjectName; sourceTree = BUILT_PRODUCTS_DIR; };
+		54026FA999249B8463898AE8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		BF533BA17175D62B8FCEFC84 /* CLTProjectName-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "CLTProjectName-Release.xcconfig"; sourceTree = "<group>"; };
+		D00045AC2B8F09BAC95BF5FB /* CLTProjectName-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "CLTProjectName-Debug.xcconfig"; sourceTree = "<group>"; };
+		D94FC4B3F9CFA50B4A3F0F85 /* CLTProjectName */ = {isa = PBXFileReference; includeInIndex = 0; path = CLTProjectName; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		0FF6ADA58BF07BBDB1B1E71D7F84D8FA = {
+		0FF6ADA58BF07BBDB1B1E71D = {
 			isa = PBXGroup;
 			children = (
-				F24F9BB30D085E310708DAAFBFFECCD9 /* CLTProjectName */,
-				751DA8E74EF772165751DE379EBB7005 /* configs */,
-				6D6EC81215D075CEEF416CCC0FCE9173 /* Products */,
+				F24F9BB30D085E310708DAAF /* CLTProjectName */,
+				751DA8E74EF772165751DE37 /* configs */,
+				6D6EC81215D075CEEF416CCC /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		6151333063B43B6B17693FC0D2F8AAB6 /* Sources */ = {
+		6151333063B43B6B17693FC0 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				54026FA999249B8463898AE894014144 /* main.swift */,
+				54026FA999249B8463898AE8 /* main.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		6D6EC81215D075CEEF416CCC0FCE9173 /* Products */ = {
+		6D6EC81215D075CEEF416CCC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D94FC4B3F9CFA50B4A3F0F85424C409E /* CLTProjectName */,
+				D94FC4B3F9CFA50B4A3F0F85 /* CLTProjectName */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		751DA8E74EF772165751DE379EBB7005 /* configs */ = {
+		751DA8E74EF772165751DE37 /* configs */ = {
 			isa = PBXGroup;
 			children = (
-				D00045AC2B8F09BAC95BF5FB407395CB /* CLTProjectName-Debug.xcconfig */,
-				BF533BA17175D62B8FCEFC84913EEF8D /* CLTProjectName-Release.xcconfig */,
+				D00045AC2B8F09BAC95BF5FB /* CLTProjectName-Debug.xcconfig */,
+				BF533BA17175D62B8FCEFC84 /* CLTProjectName-Release.xcconfig */,
 			);
 			path = configs;
 			sourceTree = "<group>";
 		};
-		F24F9BB30D085E310708DAAFBFFECCD9 /* CLTProjectName */ = {
+		F24F9BB30D085E310708DAAF /* CLTProjectName */ = {
 			isa = PBXGroup;
 			children = (
-				6151333063B43B6B17693FC0D2F8AAB6 /* Sources */,
+				6151333063B43B6B17693FC0 /* Sources */,
 			);
 			path = CLTProjectName;
 			sourceTree = "<group>";
@@ -63,11 +63,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3D654D5549753439C3A4BE46B65E7E93 /* CLTProjectName */ = {
+		3D654D5549753439C3A4BE46 /* CLTProjectName */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7F59169CCE505B4065A45738E10F9F0F /* Build configuration list for PBXNativeTarget "CLTProjectName" */;
+			buildConfigurationList = 7F59169CCE505B4065A45738 /* Build configuration list for PBXNativeTarget "CLTProjectName" */;
 			buildPhases = (
-				D5D41527BCC5EE131A957CB4C1926F9B /* Sources */,
+				D5D41527BCC5EE131A957CB4 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -75,46 +75,48 @@
 			);
 			name = CLTProjectName;
 			productName = CLTProjectName;
-			productReference = D94FC4B3F9CFA50B4A3F0F85424C409E /* CLTProjectName */;
+			productReference = D94FC4B3F9CFA50B4A3F0F85 /* CLTProjectName */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		BF9B5B8FCEC5483E5871F8DA732ADB31 /* Project object */ = {
+		BF9B5B8FCEC5483E5871F8DA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+				};
 			};
-			buildConfigurationList = 38C56D6A1BE76208BEED4058738ABA86 /* Build configuration list for PBXProject "CLTProjectName" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = 38C56D6A1BE76208BEED4058 /* Build configuration list for PBXProject "CLTProjectName" */;
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 0FF6ADA58BF07BBDB1B1E71D7F84D8FA;
+			mainGroup = 0FF6ADA58BF07BBDB1B1E71D;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3D654D5549753439C3A4BE46B65E7E93 /* CLTProjectName */,
+				3D654D5549753439C3A4BE46 /* CLTProjectName */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D5D41527BCC5EE131A957CB4C1926F9B /* Sources */ = {
+		D5D41527BCC5EE131A957CB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C1ED1EF79F054F2A2DFE3F5D5083DC2 /* main.swift in Sources */,
+				70D8F305606A983A560AC7BD /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		4501DFDC3B142934D991A70823990C9B /* Release */ = {
+		4501DFDC3B142934D991A708 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -165,29 +167,35 @@
 			};
 			name = Release;
 		};
-		6C180556DB13F7B38257EBAD3280E4A4 /* Release */ = {
+		6C180556DB13F7B38257EBAD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF533BA17175D62B8FCEFC84913EEF8D /* CLTProjectName-Release.xcconfig */;
+			baseConfigurationReference = BF533BA17175D62B8FCEFC84 /* CLTProjectName-Release.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		7B47F7241C319F3335994A9077226A32 /* Debug */ = {
+		7B47F7241C319F3335994A90 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D00045AC2B8F09BAC95BF5FB407395CB /* CLTProjectName-Debug.xcconfig */;
+			baseConfigurationReference = D00045AC2B8F09BAC95BF5FB /* CLTProjectName-Debug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
-		FF888DB3EEB949F7F06F918E32DBDF95 /* Debug */ = {
+		FF888DB3EEB949F7F06F918E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -249,25 +257,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		38C56D6A1BE76208BEED4058738ABA86 /* Build configuration list for PBXProject "CLTProjectName" */ = {
+		38C56D6A1BE76208BEED4058 /* Build configuration list for PBXProject "CLTProjectName" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FF888DB3EEB949F7F06F918E32DBDF95 /* Debug */,
-				4501DFDC3B142934D991A70823990C9B /* Release */,
+				FF888DB3EEB949F7F06F918E /* Debug */,
+				4501DFDC3B142934D991A708 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		7F59169CCE505B4065A45738E10F9F0F /* Build configuration list for PBXNativeTarget "CLTProjectName" */ = {
+		7F59169CCE505B4065A45738 /* Build configuration list for PBXNativeTarget "CLTProjectName" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7B47F7241C319F3335994A9077226A32 /* Debug */,
-				6C180556DB13F7B38257EBAD3280E4A4 /* Release */,
+				7B47F7241C319F3335994A90 /* Debug */,
+				6C180556DB13F7B38257EBAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "";
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = BF9B5B8FCEC5483E5871F8DA732ADB31 /* Project object */;
+	rootObject = BF9B5B8FCEC5483E5871F8DA /* Project object */;
 }
