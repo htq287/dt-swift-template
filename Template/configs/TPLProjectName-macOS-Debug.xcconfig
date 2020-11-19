@@ -1,1 +1,3 @@
 #include "Base-macOS.xcconfig"
+
+PRODUCT_BUNDLE_IDENTIFIER = com.swift-template.GRTPLProjectName

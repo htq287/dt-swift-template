@@ -3,7 +3,7 @@
 //  Shared
 //
 //  Created by TPLAuthor on 5/12/19.
-//  Copyright © 2019 TPLOrganizationName. All rights reserved.
+//  Copyright © 2020 TPLOrganizationName. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>

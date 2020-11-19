@@ -15,26 +15,25 @@ final class HTTPServiceTests: BaseTestCase {
     var agent: IHTTPManager?
     var apiRoot: String!
     
-    override func setUp() {
-        super.setUp()
+    override func setUpWithError() throws {
+        try super.setUpWithError()
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        
         self.agent = networkingFactory.alamofireManager()
         
         let infoDict: [String: Any]? = self.testBundle.infoDictionary
         self.apiRoot = infoDict?["API_ROOT"] as? String
     }
 
-    override func tearDown() {
+    override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    override func testExample() {
+    override func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
-    override func testPerformanceExample() {
+    override func testPerformanceExample() throws {
         // This is an example of a performance test case.
         self.measure {
             // Put the code you want to measure the time of here.

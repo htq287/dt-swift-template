@@ -6,7 +6,9 @@
 //
 
 import Foundation
-import Alamofire.Swift
+import Alamofire
+//import Alamofire.Swift
+
 
 class AlamofireManager: IHTTPManager {
     
@@ -14,8 +16,10 @@ class AlamofireManager: IHTTPManager {
         print("Initialize AlamofireManager")
     }
     
-    // MARK: IHTTPService
+    // MARK: IHTTPManager
+
     public func request(_ url: URL, _ method: String, parameters: [String : Any]?, headers: [String : String]?, _ completionHandler: @escaping ((HTTPURLResponse?, Error?) -> Void)) {
+
         print("\(self): on request")
         var response: DataResponse<Data?, AFError>?
         var _method: HTTPMethod!

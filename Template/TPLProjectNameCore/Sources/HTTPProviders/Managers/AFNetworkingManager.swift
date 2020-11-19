@@ -13,7 +13,7 @@ open class AFNetworkingManager: IHTTPManager {
         print("Initialize \(self)")
     }
     
-    // MARK: IHTTPService
+    // MARK: IHTTPManager
     public func request(_ url: URL, _ method: String, parameters: [String : Any]?, headers: [String : String]?, _ completionHandler: @escaping ((HTTPURLResponse?, Error?) -> Void)) {
         print("\(self): on request")
     }
