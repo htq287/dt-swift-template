@@ -32,12 +32,12 @@ let TPLOrganizationName = "TPLOrganizationName"
 let TPLCopyright = "Copyright © 2019"
 
 var projectName = "SampleProject"
-var bundleIdentifier = "com.rilthot.SampleProject"
+var bundleIdentifier = "com.swift-template.SampleProject"
 var author = "Hung Q. Truong"
 var authorWebsite = "https://htq287.github.io"
 var userName = "hungtq"
-var organizationName = "Rilthot"
-var copyright = "Copyright © 2019"
+var organizationName = "Anonymous"
+var copyright = "Copyright © 2020"
 
 let fileManager = FileManager.default
 
