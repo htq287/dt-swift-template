@@ -24,7 +24,7 @@ Open the xcodeproj, build and run.
 
 MIT License
 
-Copyright (c) 2019 Hung Truong. https://htq287.github.io. All rights reserved.
+Copyright (c) 2023 Hung Truong. https://htq287.com. All rights reserved.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

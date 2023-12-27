@@ -6,7 +6,7 @@ targets:
   #command line tool
   CLTProjectName:
     platform: macOS
-    deploymentTarget: "10.14"
+    deploymentTarget: "14.0"
     type: tool
     sources:
       - CLTProjectName
